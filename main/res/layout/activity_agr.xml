@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.edu.utng.horarios.AgrActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_evento"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/txv_evento"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edv_nombre"
+        android:hint="@string/ingrese_nombre_del_evento"
+        android:layout_below="@id/txv_evento"
+        android:textSize="@dimen/text_size"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_del_evento"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/txv_fecha"
+        android:layout_below="@+id/edv_nombre"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edv_fecha"
+        android:hint="@string/elija_fecha_del_evento"
+        android:layout_below="@id/txv_fecha"
+        android:textSize="@dimen/text_size"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_desde"
+        android:text="@string/desde"
+        android:layout_below="@id/edv_fecha"
+        android:textSize="@dimen/text_size"
+        />
+
+    <EditText
+        android:id="@+id/edv_desde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txv_desde"
+        android:hint="@string/ingrese_hora_de_inicio"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_hasta"
+        android:text="@string/hasta"
+        android:layout_below="@id/edv_desde"
+        android:textSize="@dimen/text_size"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edv_hasta"
+        android:layout_below="@id/txv_hasta"
+        android:textSize="@dimen/text_size"
+        android:hint="@string/ingrese_hora_de_fin"
+        />
+
+    <ImageView
+        android:id="@+id/imv_imagen"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edv_hasta"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_elegirFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imv_imagen"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/elegir_foto"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/btn_agregarEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/agregar"
+        android:textSize="@dimen/text_size"
+        android:onClick="nextActivity2"
+        />
+</RelativeLayout>

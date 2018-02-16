@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Horarios</string>
+    <string name="salir">Salir</string>
+    <string name="nombre_evento">Nombre del evento</string>
+    <string name="ingrese_nombre_del_evento">Ingrese nombre del evento</string>
+    <string name="fecha_del_evento">Fecha del evento</string>
+    <string name="elija_fecha_del_evento">Elija fecha del evento</string>
+    <string name="desde">Desde</string>
+    <string name="ingrese_hora_de_inicio">Ingrese hora de inicio</string>
+    <string name="hasta">Hasta</string>
+    <string name="ingrese_hora_de_fin">Ingrese hora de fin</string>
+    <string name="elegir_foto">Elegir foto</string>
+    <string name="agregar">Agregar</string>
+    <string name="nombre">Nombre</string>
+    <string name="escribe_un_mensaje">Escribe un mensaje</string>
+    <string name="enviar">Enviar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="todo">TODO</string>
+    <string name="d_a">Día</string>
+    <string name="hora">Hora</string>
+</resources>

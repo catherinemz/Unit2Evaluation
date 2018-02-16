@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.utng.horarios.IdiomaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un idioma"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/txv_select"
+        />
+    <Spinner
+        android:id="@+id/spn_idioma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_select"
+        android:scrollbarSize="@dimen/text_size"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sig"
+        android:text="@string/siguiente"
+        android:layout_below="@id/spn_idioma"
+        android:onClick="nextActivity4"
+        />
+</RelativeLayout>
